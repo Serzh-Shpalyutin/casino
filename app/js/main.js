@@ -1,6 +1,13 @@
 $(function(){
 
-
+    $('.header__slider').slick({
+        dots: true,
+        dotsClass: 'header__slider-dots',
+        arrows: true,
+        slidesToShow: 1,
+        prevArrow: '<button class="header__arrow-btn header__slick-prev"><img src="img/icons/arrow-left.svg" alt="prev"></button>',
+        nextArrow: '<button class="header__arrow-btn header__slick-next"><img src="img/icons/arrow-right.svg" alt="next"></button>'
+    });
 
   
 });
