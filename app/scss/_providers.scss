@@ -1,0 +1,31 @@
+.proveders {
+    &__list {
+        list-style: none;
+        margin: 19px 0 28px 20px;
+        padding: 0;
+    }
+
+    &__item {
+        display: inline-block;
+
+        & + & {
+            margin-left: 16px;
+        }
+    }
+
+    &__link {
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        padding: 6px 17px 7px;
+        border: 1px solid #282F4B;
+        border-radius: 50px;
+        transition: all .3s;
+
+        &--active,
+        &:hover {
+            border: 1px solid #D73649;
+            color: #fff;
+        }
+    }
+}

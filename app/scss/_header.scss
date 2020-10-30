@@ -157,6 +157,11 @@
 
     &__bot-link {
         text-decoration: underline;
+        transition: color .3s;
+
+        &:hover {
+            color: $green;
+        }
     }
 
     &__social-link {
@@ -304,12 +309,6 @@
         &:hover {
             color: $green;
         }
-    }
-}
-
-.logo {
-    &__link {
-        margin-left: 345px;
     }
 }
 

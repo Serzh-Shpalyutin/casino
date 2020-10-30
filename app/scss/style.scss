@@ -2,6 +2,9 @@
 @import "fonts";
 @import "vars";
 @import "header";
+@import "category";
+@import "providers";
+@import "new-games";
 
 
 
@@ -35,6 +38,13 @@ a {
 
 .container {
     max-width: 1530px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 1450px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -86,9 +96,24 @@ a {
     }
 }
 
+.logo {
+    &__link {
+        margin-left: 345px;
+    }
+}
+
 .title {
     color: #fff;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+

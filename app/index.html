@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Casino-test</title>
+  <link rel="icon" href="img/icons/logo-icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
@@ -46,23 +47,33 @@
               With your social network
             </div>
             <ul class="header__social-list">
-              <li class="header__social-item"><a href="#" class="header__social-link"
-                  style="background-image: url(img/arroba.svg);"></a></li>
-              <li class="header__social-item"><a href="#" class="header__social-link"
-                  style="background-image: url(img/odnoklassniki-logo.svg);"></a></li>
-              <li class="header__social-item"><a href="#" class="header__social-link"
-                  style="background-image: url(img/facebook.svg);"></a></li>
-              <li class="header__social-item"><a href="#" class="header__social-link"
-                  style="background-image: url(img/vk.svg);"></a></li>
-              <li class="header__social-item"><a href="#" class="header__social-link"
-                  style="background-image: url(img/google-plus.svg);"></a></li>
+              <li class="header__social-item">
+                <a href="#" class="header__social-link" style="background-image: url(img/arroba.svg);"></a>
+              </li>
+              <li class="header__social-item">
+                <a href="#" class="header__social-link" style="background-image: url(img/odnoklassniki-logo.svg);"></a>
+              </li>
+              <li class="header__social-item">
+                <a href="#" class="header__social-link" style="background-image: url(img/facebook.svg);"></a>
+              </li>
+              <li class="header__social-item">
+                <a href="#" class="header__social-link" style="background-image: url(img/vk.svg);"></a>
+              </li>
+              <li class="header__social-item">
+                <a href="#" class="header__social-link" style="background-image: url(img/google-plus.svg);"></a>
+              </li>
             </ul>
             <span>or</span>
             <form class="header__form" action="#">
-              <label><input class="header__form-item header__form-email" type="email" name="email"
-                  placeholder="E-mail *"></label>
-              <label><input class="header__form-item header__form-pass" type="password" name="password"
-                  placeholder="Password *"></label>
+              <label>
+                <input class="header__form-item header__form-email" type="email" name="email" placeholder="E-mail *">
+                <span class="visually-hidden">Email</span>
+              </label>
+              <label>
+                <input class="header__form-item header__form-pass" type="password" name="password"
+                  placeholder="Password *">
+                <span class="visually-hidden">Password</span>
+              </label>
               <label>
                 <select class="header__form-item header__form-select" name="select">
                   <option>Currency *</option>
@@ -70,16 +81,26 @@
                   <option>Ruble</option>
                   <option>Yuan</option>
                 </select>
+                <span class="visually-hidden">Currency</span>
               </label>
-              <label><input class="header__form-item header__form-promo" type="text" name="text"
-                  placeholder="Promo-code"></label>
-              <label class="header__form-checkbox"><input class="header__form-item header__form-chek" type="checkbox"
-                  name="checkbox-1" value="checkbox">I agree with
-                Teame and Confidence</label>
-              <label class="header__form-checkbox"><input class="header__form-item header__form-chek" type="checkbox"
-                  name="checkbox-2" value="checkbox">I comfirm that
-                I’m 18 years or older</label>
-              <button class="btn btn--normal header__bot-btn">Register</button>
+              <label>
+                <input class="header__form-item header__form-promo" type="text" name="text" placeholder="Promo-code">
+                <span class="visually-hidden">promo code</span>
+              </label>
+              <label class="header__form-checkbox">
+                <input class="header__form-item header__form-chek" type="checkbox" name="checkbox-1" value="checkbox">
+                I agree with Teame and Confidence
+                <span class="visually-hidden">I agree with Teame and Confidence</span>
+              </label>
+              <label class="header__form-checkbox">
+                <input class="header__form-item header__form-chek" type="checkbox" name="checkbox-2" value="checkbox">
+                I comfirm that I’m 18 years or older
+                <span class="visually-hidden">I comfirm that I’m 18 years or older</span>
+              </label>
+              <button class="btn btn--normal header__bot-btn" type="submit">
+                Register
+                <span class="visually-hidden">Register</span>
+              </button>
             </form>
 
             <a class="header__bot-link" href="#">Have an account?</a>
@@ -130,8 +151,137 @@
         </div>
       </div>
     </div>
-
   </header>
+
+  <main>
+    <section class="category">
+      <div class="container">
+        <div class="category__inner">
+          <ul class="category__list">
+            <li class="category__item">
+              <a href="#" class="category__link">
+              New games
+              <span class="category__icon" style="background-image: url(img/category/new-games.svg);"></span>
+            </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+              Popular
+              <span class="category__icon" style="background-image: url(img/category/popular.svg);"></span>
+            </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+              Slots
+              <span class="category__icon" style="background-image: url(img/category/slots.svg);"></span>
+            </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+              Casino Live
+              <span class="category__icon" style="background-image: url(img/category/casino.svg);"></span>
+            </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+              Table Games
+              <span class="category__icon" style="background-image: url(img/category/table.svg);"></span>
+            </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+              Favorites
+              <span class="category__icon" style="background-image: url(img/category/favorites.svg);"></span>
+            </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+              Last played
+              <span class="category__icon" style="background-image: url(img/category/last.svg);"></span>
+            </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+              All category
+              <span class="category__icon category__icon--right" style="background-image: url(img/category/category.svg);"></span>
+            </a>
+            </li>
+          </ul>
+          <form class="category__form">
+            <label>
+              <input class="category__search" type="search" name="search" placeholder="Search games or providers">
+              <span class="visually-hidden">Search games or providers</span>
+            </label>
+            <button class="category__btn">
+              <span class="visually-hidden">Search</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <aside class="proveders">
+      <div class="container">
+        <ul class="proveders__list">
+          <li class="proveders__item"><a href="#" class="proveders__link proveders__link--active">All Providers</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">NetEnt</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">Microgaming</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">Quickspin</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">PragmaticPlay</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">BoomingGames</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">MrSlotty</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">BoomingGames</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">BetRadar</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">PariPlay</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">BetConstruct</a></li>
+          <li class="proveders__item"><a href="#" class="proveders__link">NetEnt</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="new-games">
+      <div class="container-fluid">
+        <article class="games-list">
+          <div class="games-list__top">
+            <h3 class="title">New games</h3>
+            <a class="games-list__link" href="#">View all (46)</a>
+          </div>
+
+          <ul class="games-list__sample">
+            <li class="games-list__item" style="background-image: url(img/new-games/cash-vandal.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+            <li class="games-list__item" style="background-image: url(img/new-games/VSMonsterMad_TNP.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+            <li class="games-list__item" style="background-image: url(img/new-games/junglespirit_not_mobile_sw.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+            <li class="games-list__item" style="background-image: url(img/new-games/fairyhansel_not_mobile_sw.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+            <li class="games-list__item games-list__item--big" style="background-image: url(img/new-games/zombie-horde-main-1000-768x461.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+            <li class="games-list__item" style="background-image: url(img/new-games/playboy.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+            <li class="games-list__item" style="background-image: url(img/new-games/warlords_not_mobile_sw.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+            <li class="games-list__item" style="background-image: url(img/new-games/fairyred_not_mobile_sw.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+            <li class="games-list__item" style="background-image: url(img/new-games/copycats_not_mobile_sw.jpg);">
+              <a href="#" class="btn games-list__sample-link">Play now</a>
+            </li>
+          </ul>
+          
+        </article>
+      </div>
+    </section>
+
+  </main>
 
 
 

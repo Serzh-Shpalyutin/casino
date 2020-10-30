@@ -1,0 +1,106 @@
+.new-games {
+    background-color: $bg;
+    padding-bottom: 51px;
+}
+
+.games-list {
+
+    &__top {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        color: $green;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        padding-right: 25px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/view-all-right.svg);
+            width: 13px;
+            height: 13px;
+            right: 0;
+            top: 4px;
+            background-repeat: no-repeat;
+            background-position: top center;
+        } 
+    }
+
+    &__sample {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 232px 232px 232px 232px 461px;
+        grid-template-rows: 188px;
+        grid-gap: 8px;
+    }
+
+    &__item {
+        max-width: 252px;
+        width: 100%;
+        height: 188px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid transparent;
+        transition: .3s;
+
+        &--big {
+            width: 100%;
+            max-width: 493px;
+            min-height: 384px;
+            position: relative;
+            
+            &::after {
+                content: "New game";
+                position: absolute;
+                text-align: center;
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 500;
+                color: #fff;
+                padding-top: 7px;
+                right: -5px;
+                top: 27px;
+                background-image: url(../img/tag.png);
+                width: 99px;
+                height: 30px;
+            }
+        }
+
+        &:hover {
+            border: 5px solid #8BEB01;
+            box-sizing: border-box;
+            filter: drop-shadow(0px 0px 14px #8BEB01);
+        }
+
+        &:hover .games-list__sample-link {
+            opacity: 1;
+        }
+    }
+
+    &__sample-link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 17px;
+        opacity: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
+
+        &.btn:hover { 
+            color: #000;
+            background-color: $green;
+            border: 1px solid transparent;
+        }
+    }
+}
