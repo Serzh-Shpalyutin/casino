@@ -1,0 +1,70 @@
+.winning {
+    position: relative;
+    background: #20263E;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        top: 17px;
+        
+        width: 200px;
+        height: 74px;
+        filter: blur(34px);
+        background: #20263E;
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    &::after {
+        right: 170px;
+    }
+
+    &::before {
+        left: 342px;
+        width: 150px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.winning-card {
+    padding: 18px 0;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    &__img {
+        border-radius: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &__info {
+        margin-left: 10px;
+    }
+    
+    &__name {
+        display: block;
+        margin-bottom: 2px;
+    }
+    
+    &__link {
+        display: block;
+        color: $green;
+        text-decoration: underline;
+        margin-bottom: 8px;
+    }
+    
+    &__sum {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+

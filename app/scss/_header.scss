@@ -8,6 +8,7 @@
         height: 3px;
         top: 69px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 1;
     }
 
     &__top {
@@ -17,6 +18,7 @@
     }
 
     &__search {
+        position: relative;
         text-align: center;
         background-image: url(../img/icons/search.svg);
         height: 21px;
@@ -24,6 +26,20 @@
         background-repeat: no-repeat;
         margin: 29px 43px 22px 0px;
         color: #fff;
+        
+        &::before {
+            content: "";
+            background-image: url(../img/decor-bg-top.png);
+            top: -30px;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: -23px;
+            z-index: -1;
+        }
     }
 
     &__btns {
@@ -59,6 +75,25 @@
     &__bot {
         background-color: #141B2E;
         min-height: 492px;
+        position: relative;
+        z-index: -2;
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &::after {
+            background-image: url(../img/decor-bg-bot.png);
+            bottom: 20px;
+            left: 450px;
+        }
+
     }
 
     &__input {
@@ -178,6 +213,28 @@
         height: 492px;
     }
 
+    &__slider {
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 492px;
+            width: 49px;
+            background: linear-gradient(270deg, #091024 0%, rgba(25, 32, 50, 0) 100%);
+        }
+
+        &::before {
+            left: -49px;
+        }
+
+        &::after {
+            transform: rotate(180deg);
+            right: -49px;
+        }
+    }
+
     &__slide {
         position: relative;
     }
@@ -283,34 +340,6 @@
     } 
 }
 
-.menu {
-    
-    &__list {
-        list-style: none;
-        margin: 0;
-        padding: 29px 0 21px;
-    }
-
-    &__item {
-        display: inline-block;
-
-        & + & {
-            margin-left: 25px;
-        }
-    }
-
-    &__link {  
-        color: #fff;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21px;
-        transition: color .3s;
-
-        &:hover {
-            color: $green;
-        }
-    }
-}
 
 
 

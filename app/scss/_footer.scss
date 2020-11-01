@@ -1,0 +1,113 @@
+.footer {
+    background: #121423;
+    box-shadow: inset 0px 4px 34px rgba(0, 0, 0, 0.45);
+
+    &__providers {
+        padding: 17px 0px 20px;
+        
+    }
+
+    &__top-line,
+    &__bot-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__top-line {
+        padding: 0px 20px;
+    }
+
+    &__bot-line {
+        padding-left: 50px;
+        position: relative;
+
+        &:after { 
+            content: "";
+            border-bottom: 2px solid #172146;
+            width: 1515px;
+            position: absolute;
+            bottom: -35px;
+        }
+    }
+
+    &__providers-img {
+        margin-top: 15px;
+        width: 150px;
+        min-height: 43px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    }
+
+    &__copy {
+        padding-top: 50px;
+        max-width: 895px;
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.8;
+
+        span {
+            color: #04D0AE;
+        }
+    }
+}
+
+.footer-bottom {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__item {
+        max-width: 390px;
+    }
+
+    &__img {
+        margin-bottom: 44px;
+        display: block;
+    }
+
+    &__title {
+        margin: 9px 0 5px;
+        padding: 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 42px;
+        color: #fff;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-width: 140px;
+    }
+
+    &__list-item {
+        padding: 9px 0;
+    }
+
+    &__list-link {
+        color: #32448C;
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    &__text {
+        margin-top: 25px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 15px;
+
+        &--bold {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 19px;
+        }
+    }
+}

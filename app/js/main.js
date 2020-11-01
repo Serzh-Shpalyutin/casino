@@ -12,5 +12,4 @@ $(function(){
         nextArrow: '<button class="header__arrow-btn header__slick-next"><img src="img/icons/arrow-right.svg" alt="next"></button>'
     });
 
-  
 });

@@ -1,0 +1,16 @@
+.popular-list {
+    grid-template-columns: 461px 232px 232px 232px 232px;
+    grid-template-rows: 188px;
+
+    &__item {
+
+        &--left {
+            grid-row: span 2;
+        }
+
+        &:hover {
+            border: 5px solid #50FFE0;
+            filter: drop-shadow(0px 0px 14px #50FFDF);
+        }
+    }
+}
