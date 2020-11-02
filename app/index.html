@@ -17,7 +17,11 @@
   <header class="header">
     <div class="container">
       <div class="header__top">
+        <div class="header__burger">
+          <span class="header__burger-line"></span>
+        </div>
         <a class="header__search" href="#"></a>
+        
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item"><a href="#" class="menu__link">Casino</a></li>
@@ -26,7 +30,7 @@
           </ul>
         </nav>
         <div class="logo">
-          <a class="logo__link" href="#"><img src="img/logo.svg" alt="" class="logo__img"></a>
+          <a class="logo__link" href="#"><img class="logo__img" src="img/logo.svg" alt=""></a>
         </div>
         <div class="header__btns">
           <a class="header__btn btn" href="#">Deposit</a>
@@ -160,7 +164,7 @@
 
   <main>
     <section class="category">
-      
+
       <div class="container">
         <div class="category__inner">
           <ul class="category__list">
@@ -248,119 +252,120 @@
 
     <section class="games">
       <div class="container-fluid">
-        <article class="games-list">
+        <div class="games-list">
           <div class="games-list__top">
             <h3 class="title">New games</h3>
             <a class="games-list__link" href="#">View all (46)</a>
           </div>
 
-          <ul class="games-list__sample">
-            <li class="games-list__item" style="background-image: url(img/new-games/cash-vandal.jpg);">
-              <a href="#" class="btn games-list__sample-link">Play now</a>
-              <span class="games-list__filter">New game</span>
-            </li>
-            <li class="games-list__item" style="background-image: url(img/new-games/VSMonsterMad_TNP.jpg);">
-              <a href="#" class="btn games-list__sample-link">Play now</a>
-            </li>
-            <li class="games-list__item" style="background-image: url(img/new-games/junglespirit_not_mobile_sw.jpg);">
-              <a href="#" class="btn games-list__sample-link">Play now</a>
-            </li>
-            <li class="games-list__item" style="background-image: url(img/new-games/fairyhansel_not_mobile_sw.jpg);">
-              <a href="#" class="btn games-list__sample-link">Play now</a>
-            </li>
-            <li class="games-list__item games-list__item--big"
+            <ul class="games-list__sample">
+              <li class="games-list__item" style="background-image: url(img/new-games/cash-vandal.jpg);">
+                <a href="#" class="btn games-list__sample-link">Play now</a>
+                <span class="games-list__filter">New game</span>
+              </li>
+              <li class="games-list__item" style="background-image: url(img/new-games/VSMonsterMad_TNP.jpg);">
+                <a href="#" class="btn games-list__sample-link">Play now</a>
+              </li>
+              <li class="games-list__item" style="background-image: url(img/new-games/junglespirit_not_mobile_sw.jpg);">
+                <a href="#" class="btn games-list__sample-link">Play now</a>
+              </li>
+              <li class="games-list__item" style="background-image: url(img/new-games/fairyhansel_not_mobile_sw.jpg);">
+                <a href="#" class="btn games-list__sample-link">Play now</a>
+              </li>
+              <li class="games-list__item games-list__item--big"
               style="background-image: url(img/new-games/zombie-horde-main-1000-768x461.jpg);">
               <a href="#" class="btn games-list__sample-link">Play now</a>
               <span class="games-list__filter">New game</span>
             </li>
-            <li class="games-list__item" style="background-image: url(img/new-games/playboy.jpg);">
-              <a href="#" class="btn games-list__sample-link">Play now</a>
-            </li>
-            <li class="games-list__item" style="background-image: url(img/new-games/warlords_not_mobile_sw.jpg);">
-              <a href="#" class="btn games-list__sample-link">Play now</a>
-            </li>
-            <li class="games-list__item" style="background-image: url(img/new-games/fairyred_not_mobile_sw.jpg);">
-              <a href="#" class="btn games-list__sample-link">Play now</a>
-            </li>
-            <li class="games-list__item" style="background-image: url(img/new-games/copycats_not_mobile_sw.jpg);">
-              <a href="#" class="btn games-list__sample-link">Play now</a>
-            </li>
-          </ul>
-
-        </article>
+              <li class="games-list__item" style="background-image: url(img/new-games/playboy.jpg);">
+                <a href="#" class="btn games-list__sample-link">Play now</a>
+              </li>
+              <li class="games-list__item" style="background-image: url(img/new-games/warlords_not_mobile_sw.jpg);">
+                <a href="#" class="btn games-list__sample-link">Play now</a>
+              </li>
+              <li class="games-list__item" style="background-image: url(img/new-games/fairyred_not_mobile_sw.jpg);">
+                <a href="#" class="btn games-list__sample-link">Play now</a>
+              </li>
+              <li class="games-list__item" style="background-image: url(img/new-games/copycats_not_mobile_sw.jpg);">
+                <a href="#" class="btn games-list__sample-link">Play now</a>
+              </li>
+            </ul>
+          
+          </div>
       </div>
     </section>
 
     <section class="winning">
       <div class="container">
         <div class="winning__inner">
-          <h3 class="title">
+          <h3 class="title winning__title">
             Winning now
           </h3>
 
-          <aside class="winning-card">
-            <img class="winning-card__img" src="img/winnings/jackhammer2_sw.jpg" alt="winner">
-            <div class="winning-card__info">
-              <span class="winning-card__name">Ivan-khopin</span>
-              <a class="winning-card__link" href="#">100 Cats</a>
-              <span class="winning-card__sum">1080 P</span>
-            </div>
-          </aside>
+          <div class="winning__items">
+            <aside class="winning-card">
+              <img class="winning-card__img" src="img/winnings/jackhammer2_sw.jpg" alt="winner">
+              <div class="winning-card__info">
+                <span class="winning-card__name">Ivan-khopin</span>
+                <a class="winning-card__link" href="#">100 Cats</a>
+                <span class="winning-card__sum">1080 P</span>
+              </div>
+            </aside>
 
-          <aside class="winning-card">
-            <img class="winning-card__img" src="img/winnings/eldorado_sw.jpg" alt="winner">
-            <div class="winning-card__info">
-              <span class="winning-card__name">Daria</span>
-              <a class="winning-card__link" href="#">The Story of Alex</a>
-              <span class="winning-card__sum">1020 P</span>
-            </div>
-          </aside>
+            <aside class="winning-card">
+              <img class="winning-card__img" src="img/winnings/eldorado_sw.jpg" alt="winner">
+              <div class="winning-card__info">
+                <span class="winning-card__name">Daria</span>
+                <a class="winning-card__link" href="#">The Story of Alex</a>
+                <span class="winning-card__sum">1020 P</span>
+              </div>
+            </aside>
 
-          <aside class="winning-card">
-            <img class="winning-card__img" src="img/winnings/colossalpinatas_sw.jpg" alt="winner">
-            <div class="winning-card__info">
-              <span class="winning-card__name">Ivan-khopin</span>
-              <a class="winning-card__link" href="#">100 Cats</a>
-              <span class="winning-card__sum">1980 P</span>
-            </div>
-          </aside>
+            <aside class="winning-card">
+              <img class="winning-card__img" src="img/winnings/colossalpinatas_sw.jpg" alt="winner">
+              <div class="winning-card__info">
+                <span class="winning-card__name">Ivan-khopin</span>
+                <a class="winning-card__link" href="#">100 Cats</a>
+                <span class="winning-card__sum">1980 P</span>
+              </div>
+            </aside>
 
-          <aside class="winning-card">
-            <img class="winning-card__img" src="img/winnings/mgs_burglinbob_bonusslot.jpg" alt="winner">
-            <div class="winning-card__info">
-              <span class="winning-card__name">Ivan-khopin</span>
-              <a class="winning-card__link" href="#">100 Cats</a>
-              <span class="winning-card__sum">1440 P</span>
-            </div>
-          </aside>
+            <aside class="winning-card">
+              <img class="winning-card__img" src="img/winnings/mgs_burglinbob_bonusslot.jpg" alt="winner">
+              <div class="winning-card__info">
+                <span class="winning-card__name">Ivan-khopin</span>
+                <a class="winning-card__link" href="#">100 Cats</a>
+                <span class="winning-card__sum">1440 P</span>
+              </div>
+            </aside>
 
-          <aside class="winning-card">
-            <img class="winning-card__img" src="img/winnings/piggyriches_sw.jpg" alt="winner">
-            <div class="winning-card__info">
-              <span class="winning-card__name">Ivan-khopin</span>
-              <a class="winning-card__link" href="#">100 Cats</a>
-              <span class="winning-card__sum">2520 P</span>
-            </div>
-          </aside>
+            <aside class="winning-card">
+              <img class="winning-card__img" src="img/winnings/piggyriches_sw.jpg" alt="winner">
+              <div class="winning-card__info">
+                <span class="winning-card__name">Ivan-khopin</span>
+                <a class="winning-card__link" href="#">100 Cats</a>
+                <span class="winning-card__sum">2520 P</span>
+              </div>
+            </aside>
 
-          <aside class="winning-card">
-            <img class="winning-card__img" src="img/winnings/spacewars_sw.jpg" alt="winner">
-            <div class="winning-card__info">
-              <span class="winning-card__name">Ivan-khopin</span>
-              <a class="winning-card__link" href="#">100 Cats</a>
-              <span class="winning-card__sum">1530 P</span>
-            </div>
-          </aside>
+            <aside class="winning-card">
+              <img class="winning-card__img" src="img/winnings/spacewars_sw.jpg" alt="winner">
+              <div class="winning-card__info">
+                <span class="winning-card__name">Ivan-khopin</span>
+                <a class="winning-card__link" href="#">100 Cats</a>
+                <span class="winning-card__sum">1530 P</span>
+              </div>
+            </aside>
 
-          <aside class="winning-card">
-            <img class="winning-card__img" src="img/winnings/starburst_sw.jpg" alt="winner">
-            <div class="winning-card__info">
-              <span class="winning-card__name">Ivan-khopin</span>
-              <a class="winning-card__link" href="#">100 Cats</a>
-              <span class="winning-card__sum">3050 P</span>
-            </div>
-          </aside>
-
+            <aside class="winning-card">
+              <img class="winning-card__img" src="img/winnings/starburst_sw.jpg" alt="winner">
+              <div class="winning-card__info">
+                <span class="winning-card__name">Ivan-khopin</span>
+                <a class="winning-card__link" href="#">100 Cats</a>
+                <span class="winning-card__sum">3050 P</span>
+              </div>
+            </aside>
+          </div>
         </div>
       </div>
     </section>
@@ -459,7 +464,7 @@
               style="background-image: url(img/recommends/PrettyKitty.jpg);">
               <span class="games-list__filter">Popular</span>
               <a href="#" class="btn games-list__sample-link">Play now</a>
-              
+
             </li>
             <li class="games-list__item recommends__item"
               style="background-image: url(img/recommends/GameOfThronesWays.jpg);">
@@ -513,7 +518,7 @@
             </div>
 
           </div>
-          
+
           <div class="info-board__table">
             <h5 class="info-board__title">Biggest wins</h5>
             <div class="info-board__table-inner">
@@ -580,104 +585,102 @@
         </div>
       </div>
     </section>
+  </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__providers">
-          <div class="footer__top-line">
-            <div class="footer__providers-img" style="background-image: url(img/providers/evolution.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/bet365.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/vivo.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/yggd.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/bet365.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/evolution.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/yggd.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/microgaming.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/microgaming.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/vivo.svg);"></div>
-          </div>
-
-          <div class="footer__bot-line">
-            <div class="footer__providers-img" style="background-image: url(img/providers/evolution.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/microgaming.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/bet365.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/yggd.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/vivo.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/yggd.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/evolution.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/vivo.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/microgaming.svg);"></div>
-            <div class="footer__providers-img" style="background-image: url(img/providers/bet365.svg);"></div>
-          </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__providers">
+        <div class="footer__top-line">
+          <div class="footer__providers-img" style="background-image: url(img/providers/evolution.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/bet365.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/vivo.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/yggd.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/bet365.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/evolution.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/yggd.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/microgaming.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/microgaming.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/vivo.svg);"></div>
         </div>
-        <div class="footer-bottom">
-          <div class="footer-bottom__item">
-            <a class="footer-bottom__link" href="#"><img class="footer-bottom__img" src="img/footer-logo.svg"
-                alt="logo"></a>
-            <img class="footer-bottom__img" src="img/warning.svg" alt="logo">
-          </div>
-          <div class="footer-bottom__item">
-            <h4 class="footer-bottom__title">Navigation</h4>
-            <ul class="footer-bottom__list">
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Promotions</a></li>
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Casino Live</a></li>
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Casino</a></li>
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Sportbook</a></li>
-            </ul>
-          </div>
 
-          <div class="footer-bottom__item">
-            <h4 class="footer-bottom__title">Categories</h4>
-            <ul class="footer-bottom__list">
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">New games</a></li>
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Popular</a></li>
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Slots</a></li>
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Casino live</a></li>
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Other</a></li>
-            </ul>
-          </div>
-
-
-          <div class="footer-bottom__item">
-            <h4 class="footer-bottom__title">License</h4>
-            <ul class="footer-bottom__list">
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Responsible Game</a>
-              </li>
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Fair Play</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-bottom__item">
-            <h4 class="footer-bottom__title">Сontacts</h4>
-            <ul class="footer-bottom__list">
-              <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-bottom__item">
-            <p class="footer-bottom__text footer-bottom__text--bold">
-              To test one’s luck, one don’t even need to leave his or her house
-            </p>
-            <p class="footer-bottom__text">
-              Today online casinos have ceased to be something unusual, they are pretty much the same organizations as
-              genuine gambling-houses, and their activities are strictly controlled. The online casino WebbySlot is
-              being repeatedly tested for its honesty, and passes such tests successfully!
-            </p>
-          </div>
-
-        </div>
-        <div class="footer__copy">
-          Deuscasino.com is operated by SG International N.V., which is registered in E-Commerce park, Vredenberg,
-          Curacao, having gaming licence No.8048/JAZZ2015-035 and all rights to operate the gaming software. SG
-          International LP is providing payment services as an agent according to the licence agreement concluded
-          between SG International LP and SG International N.V.
-          © Deus Casino. All rights reserved.
-          Developed by <span>Softgamings</span>
+        <div class="footer__bot-line">
+          <div class="footer__providers-img" style="background-image: url(img/providers/evolution.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/microgaming.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/bet365.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/yggd.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/vivo.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/yggd.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/evolution.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/vivo.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/microgaming.svg);"></div>
+          <div class="footer__providers-img" style="background-image: url(img/providers/bet365.svg);"></div>
         </div>
       </div>
-    </footer>
+      <div class="footer-bottom">
+        <div class="footer-bottom__item">
+          <a class="footer-bottom__link" href="#"><img class="footer-bottom__img" src="img/footer-logo.svg"
+              alt="logo"></a>
+          <img class="footer-bottom__img" src="img/warning.svg" alt="logo">
+        </div>
+        <div class="footer-bottom__item">
+          <h4 class="footer-bottom__title">Navigation</h4>
+          <ul class="footer-bottom__list">
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Promotions</a></li>
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Casino Live</a></li>
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Casino</a></li>
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Sportbook</a></li>
+          </ul>
+        </div>
 
-  </main>
+        <div class="footer-bottom__item">
+          <h4 class="footer-bottom__title">Categories</h4>
+          <ul class="footer-bottom__list">
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">New games</a></li>
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Popular</a></li>
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Slots</a></li>
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Casino live</a></li>
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Other</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom__item">
+          <h4 class="footer-bottom__title">License</h4>
+          <ul class="footer-bottom__list">
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Responsible Game</a>
+            </li>
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Fair Play</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom__item">
+          <h4 class="footer-bottom__title">Сontacts</h4>
+          <ul class="footer-bottom__list">
+            <li class="footer-bottom__list-item"><a href="#" class="footer-bottom__list-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom__item">
+          <p class="footer-bottom__text footer-bottom__text--bold">
+            To test one’s luck, one don’t even need to leave his or her house
+          </p>
+          <p class="footer-bottom__text">
+            Today online casinos have ceased to be something unusual, they are pretty much the same organizations as
+            genuine gambling-houses, and their activities are strictly controlled. The online casino WebbySlot is
+            being repeatedly tested for its honesty, and passes such tests successfully!
+          </p>
+        </div>
+
+      </div>
+      <div class="footer__copy">
+        Deuscasino.com is operated by SG International N.V., which is registered in E-Commerce park, Vredenberg,
+        Curacao, having gaming licence No.8048/JAZZ2015-035 and all rights to operate the gaming software. SG
+        International LP is providing payment services as an agent according to the licence agreement concluded
+        between SG International LP and SG International N.V.
+        © Deus Casino. All rights reserved.
+        Developed by <span>Softgamings</span>
+      </div>
+    </div>
+  </footer> -->
 
 
 

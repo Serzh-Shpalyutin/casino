@@ -1,5 +1,5 @@
 .popular-list {
-    grid-template-columns: 461px 232px 232px 232px 232px;
+    grid-template-columns: minmax(360px, 461px) minmax(190px, 232px) minmax(190px, 232px) minmax(190px, 232px) minmax(190px, 232px);
     grid-template-rows: 188px;
 
     &__item {

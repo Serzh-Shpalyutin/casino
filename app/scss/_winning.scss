@@ -8,7 +8,6 @@
         content: "";
         position: absolute;
         top: 17px;
-        
         width: 200px;
         height: 74px;
         filter: blur(34px);
@@ -28,6 +27,11 @@
     &__inner {
         display: flex;
         align-items: center;
+    }
+
+    &__items {
+        margin-left: 25px;
+        display: flex;
         justify-content: space-between;
     }
 }
@@ -38,6 +42,10 @@
     display: flex;
     align-items: center;
     color: #fff;
+
+    & + & {
+        margin-left: 50px;
+    }
 
     &__img {
         border-radius: 50%;
